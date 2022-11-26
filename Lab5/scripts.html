@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<head>
+<script src="jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <p id="var1"></p>
+<script>
+    var name = "Luka Lukić";
+
+    var x = "Pero Perić";
+
+function vratiIme(ime) {
+var x = ime;
+function f() { return x; }
+return f;
+}
+var y = vratiIme("Hrvoje Horvat");
+var z = vratiIme()();
+
+document.getElementById("demo1").innerHTML =
+"y = : " + y;
+
+document.getElementById("demo2").innerHTML =
+"x = : " + x;
+
+(function () {
+    document.getElementById("demo3").innerHTML =
+"Global variable name is: " + name;
+})();
+</script>
+</body>

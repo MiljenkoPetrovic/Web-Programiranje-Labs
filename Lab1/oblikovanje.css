@@ -1,0 +1,46 @@
+
+body {
+    background-color: white;
+  }
+  
+  h1 {
+    color: red;
+    text-align: center;
+  }
+
+  a {
+    color: gray;
+  }
+  a:hover {
+    color: yellow;
+  }
+  
+  p {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 15px;
+    text-align: right;
+    color: blue;
+    font-style: italic;
+  }
+
+  p.para1 {
+    text-align: center;
+    color: red;
+    font-size: 110%;
+    font-family: "Times New Roman";
+  }
+
+  #para2 {
+    text-align: justify;
+    font-family: "Verdana";
+  }
+
+  p.para3 {
+    text-align: center;
+    color: red;
+  }
+
+  p.para4 {
+    text-align: center;
+    color: red;
+  }

@@ -1,0 +1,4 @@
+console.log(document.getElementById('para').textContent)
+document.getElementById('para').textContent = 'Promjena.'
+$("#para").style.backgroundColor = "green";
+document.getElementById('pic').src = "D:/LabVjezbe/Web programiranje/Lab5/Trumpium.webp";

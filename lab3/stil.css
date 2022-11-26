@@ -1,0 +1,23 @@
+.table {
+    color: red;
+    border-color: yellow;
+    align-content: center;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {background-color: #fcfa8e;}
+
+  p {
+    text-align: left;
+    padding: 4px;
+
+  }
+  p:first-of-type{font-size: larger; color: rgb(165, 82, 82);}
+
+  img{
+    rotate: 90deg;
+  }

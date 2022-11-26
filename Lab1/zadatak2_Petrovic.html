@@ -1,0 +1,46 @@
+<header>
+    <h1><a href="Lv1.html">OBRAZAC</a></h1>
+</header>
+
+<form>
+    <label for="korisnicko_ime">Korisničko ime:</label><br>
+    <input type="text" id="korisnicko_ime" name="korisnicko_ime" placeholder="Unesite lozinku"><br>
+    <label for="Lozinka">Lozinka:</label><br>
+    <input type="password" id="Lozinka" name="Lozinka" placeholder="Unesite lozinku"><br>
+</form>
+
+<form>
+    <label for="Ocjene">Ocjena:</label><br>
+    <select name="Ocjene" id="Ocjene">
+    <option value="Odličan">Odličan</option>
+    <option value="Vrlo dobar">Vrlo dobar</option>
+    <option value="Dobar">Dobar</option>
+    <option value="Dovoljan">Dovoljan</option>
+    <option value="Neovoljan">Neovoljan</option></select>
+</form>
+<form>
+    <label for="Komentar">Komentar:</label><br>
+    <textarea id="Komentar" name="Komentar" rows="7" cols="40" placeholder="Unesite Vaš komentar"></textarea>
+</form>
+
+<form>
+    <label>
+    <input type="radio" onclick="alert('Odabrali ste komunikativan')" value="Komunikativan" name="izbor">Komunikativan</button>
+    </label>
+    <label>
+    <input type="radio" onclick="alert('Odabrali ste samostalan')"value="Samostalan" name="izbor">Samostalan</button></label>
+    <label>
+    <input type="radio" onclick="alert('Odabrali ste radišan')"value="Radišan" name="izbor">Radišan</button></label>
+    <label>
+    <input type="radio" onclick="alert('Odabrali ste ništa od navedenog')" value="Ništa" name="izbor" checked="checked">Ništa od navedenog</button>
+</label>
+</form>
+
+<form>
+    <table>
+        <tr>
+          <th><button type="button" onclick="alert('Poslali ste sadržaj')">Pošalji</button></th>
+          <th><button type="button" onclick="alert('Poništili ste unos')">Poništi</button></th>
+        </tr>
+    </table>
+</form>

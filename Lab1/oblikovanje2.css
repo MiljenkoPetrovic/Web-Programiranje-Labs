@@ -1,0 +1,35 @@
+#lista li{
+    display: inline;
+    float: left;
+    margin: 8px;
+    padding: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-style: solid;
+    border-color: #345678;
+    border-width: 2;
+}
+
+#lista li a{
+border-style: solid;
+border-color: #2a27da;
+background-color: #16cae1;
+text-decoration: none;
+}
+
+#lista li a:hover{
+    border-color: rgb(216, 87, 216);
+    background-color: rgb(160, 160, 47);
+}
+
+#lista li a:active{
+    color: #b95353;
+    border-color: red;
+    background-color: green;
+}
+
+/*d) Neka se elementi te liste prikazuju linijski. Dodajte elementima odmake s lijeve i desne 
+strane od 15px, a s gornje i donje 6px. Margine neka budu 8px. Dodajte listi granicu debljine 
+2px, boje #345678 i pune linije-->*/

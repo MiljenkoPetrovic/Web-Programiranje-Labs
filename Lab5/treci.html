@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+    <script>
+        function zelenaOnClick(){
+            $("ul").first().addClass("zelena")
+        }
+
+        function imgOnClick(id){
+            $("#" + id).attr("hidden", "")
+        }
+        function imgOnEnter(id){
+            $("#" + id).css("border", "4px solid black")
+        }
+        function imgOnLeave(id){
+            $("#" + id).css("border", "none")
+        }
+        faded=true;
+        function abrakadabra(){
+            if(faded==true){
+                $("#img1").fadeOut("fast")
+                $("#img2").fadeOut("slow")
+                $("#img3").fadeOut(5000)
+                faded = false;
+            }else{
+                $("#img1").fadeIn()
+                $("#img2").fadeIn()
+                $("#img3").fadeIn()
+                faded = true;
+            }
+        }
+    </script>
+    <style>
+        .zelena{
+            color:rgb(36, 189, 31);
+        }
+        .onClick{
+            opacity:0;
+        }
+        .onHover{
+            border-color:rgb(36, 61, 168);
+            border:solid;
+        }
+    </style>
+</head>
+<body>
+    <h1>Naslov</h1>
+    <br>
+    <p>Omiljeni filmovi:</p>
+    <ul>
+        <li>Django Unchained</li>
+        <li>Hateful 8</li>
+        <li>Pulp Fiction</li>
+    </ul>
+    <br>
+    <p>Omiljene pjesme:</p>
+    <ul>
+        <li>Pjesma 1</li>
+        <li>Pjesma 2</li>
+        <li>Pjesma 3</li>
+    </ul>
+
+    <img id="img1" src="41kzWlvDuKL._AC_.jpg" onclick="imgOnClick(this.id)" onmouseenter="imgOnEnter(this.id)" onmouseleave="imgOnLeave(this.id)">
+    <img id="img2" src="Trumpium.webp" onclick="imgOnClick(this.id)" onmouseenter="imgOnEnter(this.id)" onmouseleave="imgOnLeave(this.id)">
+    <img id="img3" src="disaappearingman-recognize.gif" onclick="imgOnClick(this.id)" onmouseenter="imgOnEnter(this.id)" onmouseleave="imgOnLeave(this.id)">
+
+    <br>
+
+    <button onClick="zelenaOnClick()">ZELENA</button>
+    <button onClick="abrakadabra()">Abrakadabra</button>
+</body>
+

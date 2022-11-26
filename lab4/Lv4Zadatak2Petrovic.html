@@ -1,0 +1,73 @@
+<header>
+    <title>Validacija</title>
+</header>
+<body>
+    <h1>Validacija</h1>
+    <form>
+        <button ondblclick="pozdrav()">Pozdrav</button><br>
+    </form>
+    <form name = "flame">
+        <label for flname>Ime i Prezime:</label>
+        <input type="text" id="flname"><br><br>
+    </form>
+        <label for Kolegiji>Polje za ispis:</lable>
+        <textarea rows="10" cols="50" id="petrovic">Mjesto za ispis kolegija.</textarea><br><br>
+        <label for broj>Umetnite broj: </label>
+        <input type="number" id="broj">
+        <i class="fa fa-heart"></i>
+        <button onclick="">Kvadriraj</button><br>
+        <button onpointerleave="kolegiji()">Kolegiji</button>
+        <button onmouseover="Delete()">Obriši</button><br><br>
+        Ovdje će se ispisati rezultat.<br><br>
+        <label for email>Vaša e-mail adresa: </label>
+        <input type="text" id="email"><br><br>
+        <button onclick="provjeri()">Provjeri!</button>
+       
+
+    <script>
+        function pozdrav(){
+            for(let x = 5; x>0; x--){
+                alert("Imate " + x + " upozorenja!")
+            }
+        }
+        function provjeri(){
+            var chk = document.getElementById("flname").value;
+            if (chk == ""){
+                alert("Empty!");
+            }
+            var chk2 = document.getElementById("petrovic").value;
+            if (chk2.length < 30){
+                alert("Manje od 30!");
+            }
+            var chk3 = document.getElementById("email").value;
+            flag=false;
+            const myArray = chk3.split("@");
+            if(myArray[0].length < 2){
+                alert("Najmanje 2 znaka prije @");
+                flag=true;
+            }if(myArray[1].includes(".")){
+                const myArray2 = myArray[1].split(".");
+            }else{alert("fali točka");
+            flag = true;
+            }
+            if(myArray2[0].length < 2){
+            alert("Najmanje 2 znaka nakon @");
+            flag = true;
+            }
+            if(myArray2[1].length < 2){
+                alert("namanje 2 znaka nakon .");
+                flag = true;
+            }
+            if(flag == false){
+                alert("Sve okej");
+            }
+        }
+        function kolegiji(){
+            for(var broj_kolegija in kolegiji){
+                document.getElementById('prezime').value+=("Kolegij broj [" + broj_kolegija);
+                document.getElementById('prezime').value+=("]: "+ kolegiji[broj_kolegija] + "\n")}}
+        function Delete(){
+            document.getElementById("petrovic").value = "";
+        }
+    </script>
+</body>
